@@ -1,9 +1,7 @@
-#include <QCoreApplication>
 #include "lista.h"
 
-int main(int argc, char *argv[])
+int main()
 {
-    QCoreApplication a(argc, argv);
 
     lista *l = new lista();
     l->crearActividad("miercoles","desayunar");
@@ -26,5 +24,5 @@ int main(int argc, char *argv[])
     l->imprimirDia("lunes");
     std::cout <<"-----imprimiendo dia especifico----------"<<std::endl;
     l->imprimirDia("sabado");
-    return a.exec();
+    return 0;
 }
